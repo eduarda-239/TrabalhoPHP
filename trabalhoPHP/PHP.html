@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        .content{display: flex; justify-content: center;}
+        .contato{width: 100%; max-width: 500px;}
+        .form{display: flex; flex-direction: column;} 
+        .field{padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;}
+        .field2{padding: 10px; margin-bottom: 15px; border: 1px solid rgb(173, 171, 171); border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 16px;}
+        textarea{height: 150px;}
+
+        </style>
+</head>
+<body>
+
+    <section class="content" >
+
+        <div class="contato">
+            <h3>Formulário de Contato </h3>
+            <form class="form" method="POST" action="trabalho.php" >
+                <input class="field" name="name" placeholder="nome">
+                <input class="field" name="age" placeholder="idade">
+                <input class="field" name="product" placeholder="Quantidade Produto">
+                <input class="field" name="email" placeholder="email">
+                <textarea class="field" name = "message" placeholder = "Digite sua mensagem aqui"></textarea>
+                <input class="field2" type="submit" value="Enviar">
+
+            </form>
+        </div>
+
+    </section>
+
+    <section>
+        <div>
+            <fieldset>
+                <h1> 1.Todas as informações do formulário são obrigatórias</h1>
+                <br>
+                <h1> 2. Somente pessoas maiores de 18 anos podem realizar solicitações </h1> 
+                <br>
+                <h1> 3. Não podeser solicitada uma quantidade menor do que 1 e maior do que 4 produtos </h1>
+                <br>
+
+            </fieldset>
+        </div>
+    </section>
+
+    
+</body>
+</html>
